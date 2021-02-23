@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Lab_02</string>
     <string name="title_activity_second">SecondActivity</string>
-    <string name="hello_world">Hello Square World!</string>
+    <string name="beginning">intro</string>
     <string name="top">top</string>
+    <string name="button">Image?</string>
+    <
 </resources>
