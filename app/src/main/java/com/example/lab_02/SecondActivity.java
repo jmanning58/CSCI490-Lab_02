@@ -6,7 +6,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Intent;
-
+import android.graphics.drawable.Drawable;
+import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity {
@@ -28,30 +29,21 @@ public class SecondActivity extends AppCompatActivity {
         // Accessing the key from MainActivity
         String s = i.getExtras().getString("testString");
 
-        mTextView
         // Part 2
-        this.moon = findViewById();
-        this.moon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // get the image id
+        this.moon = findViewById(R.id.the_moon);
 
-                // set imageID to the image id
-
-                finish();
-            }
+        this.moon.setOnClickListener(v -> {
+            // get the image id
+            imageID = R.drawable.supermoon;
+            finish();
         });
 
-        this.waterfall = findViewById();
-        this.waterfall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // get the image id
+        this.waterfall = findViewById(R.id.the_waterfall);
 
-                // set imageID to the image id
-                // imageID = R.drawable.waterfall;
-                finish();
-            }
+        this.waterfall.setOnClickListener(v -> {
+            // get the image id
+            imageID = R.drawable.waterfall;
+            finish();
         });
 
 

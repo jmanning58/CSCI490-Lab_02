@@ -2,7 +2,6 @@ package com.example.lab_02;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.editText = findViewById(R.id.plain_text_input);
+        this.editText = findViewById(R.id.edit_text_line);
 
         this.button = findViewById(R.id.button);
         i = new Intent(this, SecondActivity.class);
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             if (extras != null) {
                 int imageID = extras.getInt("imageID");
 
-                ConstraintLayout currentLayout = findViewById(R.id.main_layout);
+                ConstraintLayout currentLayout = findViewById(R.id.mainLayout);
                 currentLayout.setBackground(getDrawable(imageID));
             }
         }

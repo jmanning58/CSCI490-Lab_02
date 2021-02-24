@@ -2,7 +2,7 @@
     <string name="app_name">Lab_02</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="beginning">intro</string>
-    <string name="top">top</string>
-    <string name="button">Image?</string>
-    <
+    <string name="top">Your name</string>
+    <string name="button">Set Background</string>
+    <string name="secondText">Text 2</string>
 </resources>
