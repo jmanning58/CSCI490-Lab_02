@@ -10,8 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import android.os.Bundle;
-
 public class MainActivity extends AppCompatActivity {
 
     public static final int REQUEST_CODE = 1;
@@ -26,19 +24,20 @@ public class MainActivity extends AppCompatActivity {
 
         this.editText = findViewById(R.id.edit_text_line);
 
-        this.button = findViewById(R.id.button);
+        this.button = findViewById(R.id.to_second_activity);
         i = new Intent(this, SecondActivity.class);
 
         button.setOnClickListener(v -> {
 
-            String s = editText.getText().toString();
+
+            // String s = editText.getText().toString();
 
             // "testString" is a key for SecondActivity
             // Log.i("MainActivity, "String: " + s);
-            i.putExtra("testString", s);
+            // i.putExtra("testString", s);
 
             // PART 1
-            //startActivity(i);
+            startActivity(i);
             startActivityForResult(i, REQUEST_CODE);
         });
     }
@@ -56,9 +55,12 @@ public class MainActivity extends AppCompatActivity {
             if (extras != null) {
                 int imageID = extras.getInt("imageID");
 
-                ConstraintLayout currentLayout = findViewById(R.id.mainLayout);
+                ConstraintLayout currentLayout = findViewById(R.id.);
                 currentLayout.setBackground(getDrawable(imageID));
             }
         }
+    }
+
+    public void launchSecondActivity(View view) {
     }
 }

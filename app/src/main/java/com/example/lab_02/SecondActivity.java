@@ -46,11 +46,6 @@ public class SecondActivity extends AppCompatActivity {
             finish();
         });
 
-
-
-        this.mTextView = findViewById(R.id.textView2);
-        this.mTextView.setText(s);
-
         // This will be null
         // badEditText = findViewById(R.id.plain_text_input);
 
@@ -60,12 +55,12 @@ public class SecondActivity extends AppCompatActivity {
         // finish();
     }
       // Part 2
-//    @Override
-//    public void finish() {
-//        Intent intent = new Intent();
-//        intent.putExtra("imageID", imageID;
+    @Override
+    public void finish() {
+        Intent intent = new Intent();
+        intent.putExtra("imageID", imageID);
 
-//        setResult(RESULT_OK, intent);
-//        super.finish();
-//    }
+        setResult(RESULT_OK, intent);
+        super.finish();
+    }
 }
